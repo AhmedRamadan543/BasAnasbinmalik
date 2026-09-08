@@ -1,0 +1,6 @@
+{
+  "name": "بوابة النقل المدرسي — مدرسة أنس بن مالك الخاصة",
+  "description": "بوابة إلكترونية للاستعلام عن بيانات النقل المدرسي وحافلات الطلاب بمدرسة أنس بن مالك الخاصة",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

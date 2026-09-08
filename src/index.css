@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-page: #FBF7EF;
+    --bg-card: #FFFFFF;
+    --text-heading: #16324A;
+    --text-body: #1E2A33;
+    --text-muted: #5C6B75;
+    --border-subtle: #E4DCC9;
+    --accent-amber: #E8A33D;
+    --accent-amber-deep: #C77F1F;
+    --navy-header: #16324A;
+    --navy-deep: #0E2434;
+  }
+
+  .dark {
+    --bg-page: #091017;
+    --bg-card: #111D28;
+    --text-heading: #F8FAFC;
+    --text-body: #E2E8F0;
+    --text-muted: #94A3B8;
+    --border-subtle: #1F3244;
+    --accent-amber: #F5A623;
+    --accent-amber-deep: #F59E0B;
+    --navy-header: #0B1622;
+    --navy-deep: #050B12;
+  }
+
+  body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-body);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+/* Print Rules */
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  #printable-pass, #printable-pass * {
+    visibility: visible !important;
+  }
+  #printable-pass {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 24px;
+    background: white !important;
+    color: #16324A !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
